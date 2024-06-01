@@ -1,0 +1,12 @@
+.button-starter{
+    transition: all 0.5s;
+}
+
+.button-starter:hover{
+    background-color: #333;
+    color: aliceblue !important;
+}
+
+.banner {
+    border-radius: 25px;
+}

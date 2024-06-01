@@ -1,0 +1,8 @@
+.btn-login {
+    transition: all 0.3s;
+}
+
+.btn-login:hover {
+    transform: scale(1.1);
+    background-color: #333;
+}
