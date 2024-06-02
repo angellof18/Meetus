@@ -28,16 +28,13 @@ export const Home = ({ setPage }) => {
                         <div className="container has-text-link">
                             <ul>
                                 <li>
-                                    <a href=""><i class="bi bi-facebook"></i></a>
+                                    <a href="https://www.facebook.com/TecNMAltamira" target='_blank'><i class="bi bi-facebook"></i></a>
                                 </li>
                                 <li>
-                                    <a href=""><i class="bi bi-twitter"></i></a>
+                                    <a href="https://www.altamira.tecnm.mx/" target='_blank'><i class="bi bi-browser-chrome"></i></a>
                                 </li>
                                 <li>
-                                    <a href=""><i class="bi bi-whatsapp"></i></a>
-                                </li>
-                                <li>
-                                    <a href=""><i class="bi bi-github"></i></a>
+                                    <a href="https://github.com/angellof18" target='_blank'><i class="bi bi-github"></i></a>
                                 </li>
                             </ul>
                         </div>

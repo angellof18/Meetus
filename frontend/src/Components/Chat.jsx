@@ -54,7 +54,7 @@ export const Chat = ({ socket, username, room }) => {
                                     overflowWrap: 'break-word', wordWrap: 'break-word', wordBreak: 'break-word',
                                     width: '100%'
                                 }}
-                                    className={`message ${username === item.author ? 'is-success' : 'is-info'}`}>
+                                    className={`message ${username === item.author ? 'is-success animate__animated animate__fadeInRight animate__faster' : 'is-info animate__animated animate__fadeInLeft animate__faster'}`}>
                                     <div class="message-body">
                                         <p className='is-size-4 is-size-6-mobile'>{item.message}</p>
                                         <p className="is-size-7">Enviado por <strong><p>{item.author}</p></strong> a las <i>{item.time}</i></p>

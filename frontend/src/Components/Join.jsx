@@ -49,7 +49,7 @@ export const Join = ({ setPage, usuario }) => {
 
                                 </div>
                                 <div className="column">
-                                    <img src="./join2.jpg" alt="join_img" />
+                                    <img src="./join2.jpg" alt="join_img" className="animate__animated animate__zoomIn animate__faster"/>
                                 </div>
                             </div>
                         </div>

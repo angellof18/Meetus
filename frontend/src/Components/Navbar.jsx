@@ -39,38 +39,9 @@ export const Navbar = ({ onToggle, setPage }) => {
                 </div>
                 <div className={`navbar-menu animate__animated animate__fadeInDown animate__faster ${active && 'is-active'}`} id='menu'>
                     <div className="navbar-start">
-
-                        <div className="navbar-item has-dropdown is-hoverable">
-                            <a className="navbar-link">Tema</a>
-                            <a className="navbar-dropdown">
-                                <a className="navbar-item">
-
-                                    <div className="field" onClick={handleToggle}>
-                                        <div className="control">
-                                            <span className="icon has-text-warning">
-                                                <i className="bi bi-sun-fill" />
-                                            </span>
-                                            <span>  Claro</span>
-                                        </div>
-                                    </div>
-                                </a>
-                                <a className="navbar-item" onClick={handleToggle}>
-                                    <div className="field">
-                                        <div className="control">
-                                            <span className="icon has-text-link">
-                                                <i className="bi bi-moon-fill" />
-                                            </span>
-                                            <span>  Oscuro</span>
-                                        </div>
-                                    </div>
-                                </a>
-                            </a>
-                        </div>
+                            <a className="navbar-item">Unirse a un chat</a>
                     </div>
                     <div className="navbar-end">
-                        <div className="navbar-item">
-                            <button className="button is-success" onClick={() => setPage('Join')}>Unirse</button>
-                        </div>
                         <div className="navbar-item">
                             <button className="button is-dark" onClick={() => setPage('Login')}>Logout</button>
                         </div>
