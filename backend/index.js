@@ -5,6 +5,7 @@ const mysql = require("mysql")
 const { Server } = require("socket.io")
 const { join } = require('path')
 const app = express()
+require('dotenv').config()
 
 app.use(express.json())
 app.use(express.static(join(__dirname, '../frontend/dist')))
@@ -18,7 +19,7 @@ const db = mysql.createConnection({
     host: process.env.DB_HOST,
     database: process.env.DB_NAME,
     user: process.env.DB_USER,
-    password: process.env.DB_PASSWORD,
+    password: process.env.DB_PASSWORD || '',
     port: process.env.DB_PORT
 })
 //Verificamos conexion

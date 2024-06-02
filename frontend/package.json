@@ -15,6 +15,7 @@
     "bootstrap-icons": "^1.11.3",
     "bulma": "^1.0.1",
     "bulma-switch": "^2.0.4",
+    "chat-all": "file:..",
     "crypto-js": "^4.2.0",
     "hover.css": "^2.3.2",
     "react": "^18.2.0",
