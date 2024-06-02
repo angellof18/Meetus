@@ -39,7 +39,7 @@ export const Navbar = ({ onToggle, setPage }) => {
                 </div>
                 <div className={`navbar-menu animate__animated animate__fadeInDown animate__faster ${active && 'is-active'}`} id='menu'>
                     <div className="navbar-start">
-                            <a className="navbar-item">Unirse a un chat</a>
+                            <a className="navbar-item" onClick={() => setPage('Join')}>Unirse a un chat</a>
                     </div>
                     <div className="navbar-end">
                         <div className="navbar-item">
