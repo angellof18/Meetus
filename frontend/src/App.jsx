@@ -18,7 +18,7 @@ function App() {
       case 'Inicio':
         return (
           <div>
-            <Navbar onToggle={handleToggle} setPage={setPage} />
+            <Navbar onToggle={handleToggle} setPage={setPage} user={username}/>
             <Home setPage={setPage} />
           </div>
         )
@@ -26,7 +26,7 @@ function App() {
       case 'Join':
         return (
           <div>
-            <Navbar onToggle={handleToggle} setPage={setPage} />
+            <Navbar onToggle={handleToggle} setPage={setPage} user={username}/>
             <Join setPage={setPage} usuario={username} />
           </div>
         )
@@ -46,7 +46,7 @@ function App() {
       default:
         return (
           <div>
-            <Navbar onToggle={handleToggle} setPage={setPage} />
+            <Navbar onToggle={handleToggle} setPage={setPage} user={username}/>
             <Home setPage={setPage} />
           </div>
         )
