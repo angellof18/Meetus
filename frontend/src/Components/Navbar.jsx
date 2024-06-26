@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import './css/Navbar.css'
 
 
-export const Navbar = ({ onToggle, setPage, user }) => {
+export const Navbar = ({ onToggle, setPage }) => {
 
     const [active, setActive] = useState(false)
 
@@ -41,25 +41,7 @@ export const Navbar = ({ onToggle, setPage, user }) => {
                     <div className="navbar-start">
                         <a className="navbar-item" onClick={() => setPage('Join')}>Unirse a un chat</a>
                     </div>
-                    <div className="navbar-end">
-                        <div className="navbar-item has-dropdown is-hoverable">
-
-                            <div class="navbar-link">
-                                <span class="icon">
-                                    <i class="bi bi-person-square" />
-                                </span>
-                                <span>{user}</span>
-                            </div>
-
-                            <div className="navbar-dropdown">
-                                <a className="navbar-item"
-                                    onClick={() => setPage('Login')}>
-                                    Logout
-                                </a>
-                            </div>
-
-                        </div>
-                    </div>
+                    
                 </div>
             </nav>
         </div>

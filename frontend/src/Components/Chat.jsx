@@ -39,7 +39,7 @@ export const Chat = ({ socket, username, room }) => {
                 <div className="card-header-title" >
                     <div className="level">
                         <div className="level-left">
-                            <p className='level-item'><strong>{`Chat | Sala ${room}`}</strong></p>
+                            <div className='level-item'><strong>{`Chat | Sala ${room}`}</strong></div>
                         </div>
                     </div>
                 </div>
@@ -55,9 +55,9 @@ export const Chat = ({ socket, username, room }) => {
                                     width: '100%'
                                 }}
                                     className={`message ${username === item.author ? 'is-success animate__animated animate__fadeInRight animate__faster' : 'is-info animate__animated animate__fadeInLeft animate__faster'}`}>
-                                    <div class="message-body">
+                                    <div className="message-body">
                                         <p className='is-size-4 is-size-6-mobile'>{item.message}</p>
-                                        <p className="is-size-7">Enviado por <strong><p>{item.author}</p></strong> a las <i>{item.time}</i></p>
+                                        <p className="is-size-7">Enviado por <strong><span>{item.author}</span></strong> a las <i>{item.time}</i></p>
                                     </div>
                                 </article>
                                 <hr />

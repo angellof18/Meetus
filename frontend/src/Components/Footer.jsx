@@ -4,8 +4,7 @@ export const Footer = () => {
     return (
         <div>
             <footer className="footer has-text-centered is-fixed-bottom">
-                <p>@2024 Derechos reservados</p>
-                <p><strong>Angel Yahir Arteaga Rodriguez</strong></p>
+                <p>Elaborado por <strong>Angel Yahir Arteaga Rodriguez</strong> @2024</p>
             </footer>
         </div>
     )

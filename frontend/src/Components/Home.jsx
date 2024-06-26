@@ -28,45 +28,29 @@ export const Home = ({ setPage }) => {
                         <div className="container has-text-link">
                             <ul>
                                 <li>
-                                    <a href="https://www.facebook.com/TecNMAltamira" target='_blank'><i class="bi bi-facebook"></i></a>
+                                    <a href="#"><i className="bi bi-facebook"></i></a>
                                 </li>
                                 <li>
-                                    <a href="https://www.altamira.tecnm.mx/" target='_blank'><i class="bi bi-browser-chrome"></i></a>
+                                    <a href="#"><i className="bi bi-browser-chrome"></i></a>
                                 </li>
                                 <li>
-                                    <a href="https://github.com/angellof18" target='_blank'><i class="bi bi-github"></i></a>
+                                    <a href="https://github.com/angellof18" target='_blank'><i className="bi bi-github"></i></a>
                                 </li>
                             </ul>
                         </div>
                     </nav>
                 </div>
             </div>
+
             <div className="hero is-info">
                 <div className="hero-body">
                     <div className="content">
                         <div className="columns is-vcentered">
-                            <div className="column is-half px-5">
-                                <span className="title is-size-1 is-size-3-mobile">
-                                    <p>Expresate<p className='has-text-link'>con libertad</p></p>
-                                </span>
-                                <p>El cifrado de extremo a extremo protege tus llamadas y mensajes personales. Solo tú y la persona con quien hables podrán leer o escuchar lo que se envía, y nadie más, ni siquiera <span className="subtitle">Meetus</span>.</p>
-                            </div>
-                            <div className="column">
-                                <img src="./cifrado.jpg" alt="" className="image"
-                                    style={{ borderRadius: '5%' }} />
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div className="hero">
-                <div className="hero-body">
-                    <div className="content">
-                        <div className="columns is-vcentered">
                             <div className="column is-half">
-                                <img src="./chat-bot.png" alt="" className="image"
-                                    style={{ borderRadius: '5%' }} />
+                                <figure className="image is-16by9">
+                                    <img src="./chat-bot.png" alt="" className="image"
+                                        style={{ borderRadius: '15px' }} />
+                                </figure>
                             </div>
                             <div className="column">
                                 <div className="content has-text-centered">

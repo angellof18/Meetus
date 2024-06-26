@@ -3,8 +3,6 @@ import { useState } from "react";
 import { Navbar } from "./Components/Navbar"
 import { Home } from "./Components/Home";
 import { Join } from "./Components/Join";
-import { Signup } from "./Components/Signup";
-import { Login } from "./Components/Login";
 
 
 function App() {
@@ -18,7 +16,7 @@ function App() {
       case 'Inicio':
         return (
           <div>
-            <Navbar onToggle={handleToggle} setPage={setPage} user={username}/>
+            <Navbar onToggle={handleToggle} setPage={setPage} />
             <Home setPage={setPage} />
           </div>
         )
@@ -26,27 +24,15 @@ function App() {
       case 'Join':
         return (
           <div>
-            <Navbar onToggle={handleToggle} setPage={setPage} user={username}/>
-            <Join setPage={setPage} usuario={username} />
+            <Navbar onToggle={handleToggle} setPage={setPage} />
+            <Join />
           </div>
-        )
-
-      case 'Registro':
-        return (
-          <div>
-            <Signup setPage={setPage} />
-          </div>
-        )
-
-      case 'Login':
-        return (
-          <Login setPage={setPage} setUser={setUsername} />
         )
 
       default:
         return (
           <div>
-            <Navbar onToggle={handleToggle} setPage={setPage} user={username}/>
+            <Navbar onToggle={handleToggle} setPage={setPage} />
             <Home setPage={setPage} />
           </div>
         )
